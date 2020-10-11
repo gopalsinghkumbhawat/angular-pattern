@@ -39,6 +39,11 @@ export class AppComponent implements OnInit {
     this.canvasCtx = this.canvas.nativeElement.getContext('2d');
   }
 
+  reset(){
+    this.canvasCtx.restore();
+    this.ngOnInit();
+  }
+
   getXYCoordinates(e, index, currentValue) {
     console.log(e, index, currentValue);
     this.tiles[index].isSelected = true;

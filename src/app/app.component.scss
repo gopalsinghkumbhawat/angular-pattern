@@ -1,5 +1,9 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
 .angular-pattern-container{
-  height: 100%;
+  height: 94.8%;
 
   .canvas-container {
     height: 100%;
@@ -33,6 +37,27 @@
     top: 34%;
     left: 40%;
     z-index: 0;
+  }
+
+  
+}
+
+.footer-container {
+  height: 50px;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #009688 !important;
+  .footer-copyright {
+    padding: 0px 20px;
+    text-align: right;
+    font-size: medium;
+    color: white;
+
+    .link {
+      color: white;
+    }
   }
 }
 

@@ -1,11 +1,20 @@
+<!-- <mat-toolbar color="primary">
+  <div fxLayout="row" fxLayoutAlign="end end">
+    <div fxFlex="100%">
+      <button mat-fab (click)="reset()">Reset</button>
+    </div>
+  </div>
+</mat-toolbar> -->
+
 <div class="angular-pattern-container">
   <div class="canvas-container">
     <mat-grid-list cols="1" rowHeight="100%" class="patten-container">
       <mat-grid-tile>
         <mat-card class="pattern-card">
           <mat-grid-list cols="3" rowHeight="100px">
-            <mat-grid-tile *ngFor="let tile of tiles;index as i" id="{{ tile.id }}" >
-              <button mat-fab [ngClass]="{'selected': tile.isSelected, 'un-selected': !tile.isSelected}" (click)="getXYCoordinates($event, i, tile)"  class="node">{{tile.text}}</button>
+            <mat-grid-tile *ngFor="let tile of tiles;index as i" id="{{ tile.id }}">
+              <button mat-fab [ngClass]="{'selected': tile.isSelected, 'un-selected': !tile.isSelected}"
+                (click)="getXYCoordinates($event, i, tile)" class="node">{{tile.text}}</button>
             </mat-grid-tile>
           </mat-grid-list>
         </mat-card>
@@ -14,3 +23,9 @@
     <canvas #canvas class="canvas-area" width="600" height="300"></canvas>
   </div>
 </div>
+
+<footer class="footer-container">
+  <div class="footer-copyright">© 2020 Copyright:
+    <a class="link" href="https://github.com/gopalsinghkumbhawat">GSK</a>
+  </div>
+</footer>
