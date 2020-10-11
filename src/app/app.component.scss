@@ -1,12 +1,39 @@
-.patten-container {
-    background-color: lightgreen;
+.angular-pattern-container{
+  height: 100%;
 
+  .canvas-container {
+    height: 100%;
+    position: relative;
+  }
+
+  .patten-container {
+    background-color: lightgreen;
+  
     .pattern-card {
          min-width: 400px;
          border-radius: 5%;
-
+  
         .node {
             font-size: x-large;
+            z-index: 9999
+        }
+
+        .selected {
+          background-color: green;
+        }
+
+        .un-selected {
+          background-color:blueviolet;
         }
     }
+  }
+
+  .canvas-area {
+    position: absolute;
+    top: 34%;
+    left: 40%;
+    z-index: 0;
+  }
 }
+
+
