@@ -3,7 +3,7 @@
 }
 
 .angular-pattern-container{
-  height: 88.1%;
+  height: 100%;
   
   .canvas-container {
     height: 100%;
@@ -12,6 +12,7 @@
 
   .patten-container {
     background-color: lightgreen;
+    height: 80%;
   
     .pattern-card {
          min-width: 400px;
@@ -34,7 +35,7 @@
 
   .canvas-area {
     position: absolute;
-    top: 34%;
+    top: 35%;
     left: 40%;
     z-index: 0;
   }

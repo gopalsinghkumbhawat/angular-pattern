@@ -1,11 +1,13 @@
-<mat-toolbar color="primary">
-  <div class="row">
-    <div class="col-md-12 text-right">
-      <button mat-fab (click)="reset()">Reset</button>
-    </div>
-  </div>
-</mat-toolbar>
 
+<p style="margin-bottom: 0px;">
+  <mat-toolbar color="primary">
+    <span>Angular Pattern</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" (click)="reset()">
+      Reset
+    </button>
+  </mat-toolbar>
+</p>
 <div class="angular-pattern-container">
   <div class="canvas-container">
     <mat-grid-list cols="1" rowHeight="100%" class="patten-container">
