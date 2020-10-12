@@ -40,8 +40,10 @@ export class AppComponent implements OnInit {
   }
 
   reset(){
-    this.canvasCtx.restore();
-    this.ngOnInit();
+    this.tiles.forEach(_cT => {
+      _cT.isSelected = false;
+    });
+    this.resetCanvas();
   }
 
   getXYCoordinates(e, index, currentValue) {
@@ -92,5 +94,6 @@ export class AppComponent implements OnInit {
       this.canvas.nativeElement.width,
       this.canvas.nativeElement.height
     );
+
   }
 }
